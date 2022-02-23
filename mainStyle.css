@@ -1,0 +1,334 @@
+/*General Condition --Another all*/
+
+body {
+  background-color: #e3f2f8;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin:0px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3.6em;
+  color: #555555;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: #555555;
+  opacity: 0.5;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  height: 5em;
+  width: 100%;
+  padding-left: 5em;
+  z-index: 9999;
+  transition: background-color 0.4s ease;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: rgb(31, 30, 114);
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 1em;
+  transition: font-weight 0.5s ease;
+
+}
+
+
+#navbar a:hover{
+  font-weight: 1000;
+}
+
+
+
+#welcomemain {
+  height: 100vh;
+}
+
+#leftside {
+  padding-top: 10em;
+  padding-left: 5em;
+}
+
+#rightside {
+  display:flex;
+  background-image: url("images/wave.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 55em;
+  top: -10em;
+  z-index: -9999;
+  width: 50em;
+  height: 50em;
+  border-radius: 60px;
+  transform: rotate(20deg);
+  box-shadow: 0px 0px 35px #4f21f5;
+}
+
+#welcometext {
+  width: 45%;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+#contactBtn {
+  margin-left: 16%;;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 1em 2em 1em 2em;
+  border-radius: 50px;
+  background: linear-gradient(-45deg, #1b27d4, #021520);
+  transition:box-shadow 0.5s ease;
+  
+}
+#contactBtn:hover{
+  box-shadow: 0px 5px 35px #ada2a9;
+  cursor: pointer;
+}
+
+#projects {
+  display: grid;
+  margin: 0px 5em 0px 5em;
+
+}
+h2{
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  font-size: 2.6em;
+  color: #4f21f5;
+  margin: 0;
+}
+#line{
+  margin-top:1em;
+  margin-bottom: 5em;
+  justify-self: center;
+  width: 4em;
+  height: 0.3em;
+  background: linear-gradient(-45deg, rgb(16, 8, 90), #5ae6e6);
+}
+
+.fccProject{
+
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  margin-bottom: 2em;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+
+
+.project-tile {
+  box-shadow: 0px 15px 50px #0d066d;
+  height: 30em;
+}
+
+#project-link {
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.overlay {
+  background-color: #000;
+  display: grid;
+  justify-content: center;
+  padding: 3em 0px 3em 0px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.project-tile:hover>.overlay {
+  opacity: 0.75;
+  cursor:pointer;
+}
+
+.project-tile:hover>.overlay>.overlayIcon {
+  opacity: 1;
+}
+
+.project-tile:hover>.overlay>#project-link {
+  opacity: 1;
+}
+
+
+#fcc1{
+  background-image: url('images/plantesitweb.PNG');
+  background-size:  100% 100%;
+}
+#fcc2{
+  background-image: url('images/categorie.PNG');
+  background-size: 100% 100%;
+}
+#fcc3{
+  background-image: url('images/site2.PNG');
+  background-size: 100% 100%;
+}
+#contact{
+  background-color: #363a39;
+  color: #fff;
+  display: grid;
+  justify-content:center;
+  margin-top: 4em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+}
+#contact h2{
+  color: #fff;
+}
+#contact p{
+  padding:0;
+  text-align: center;
+  font-weight: 900;
+  color:white;
+}
+
+
+#contact a{
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  transition: color 0.3s ease;
+  justify-self:center;
+}
+#contact a:hover{
+  color: #ea257e;
+}
+#footer{
+  background-color: #252827;
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 1em 0 1em 0em;
+}
+button:focus{
+  outline: none;
+}
+/* Extra small devices (phones, 600px and down) --Small  */
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    max-width:600px;
+  }
+    #rightside{
+    display: none;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 0.5em;
+    font-weight: 200;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  #navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    height: 3em;
+    width: 100%;
+    margin-left: 1em;
+  }
+  #navbar a {
+    font-size: 0.5em;
+    font-weight: 200;
+    margin: 1em;
+    transition: font-weight 0.5s ease;
+  }
+
+  #welcomemain {
+    height: 50vh;
+  }
+  #leftside {
+    padding-top: 4em;
+    padding-left: 3em;
+  }
+  #contactBtn {
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.5em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 50px;
+    background: linear-gradient(-45deg, #B24592, #F15F79);
+    transition:box-shadow 0.5s ease;
+  }
+  h2{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    color: #ea257e;
+    margin: 0;
+  }
+  #line{
+    margin-bottom: 2em;
+    justify-self: center;
+    width: 2em;
+    height: 0.3em;
+    background: linear-gradient(-45deg, #B24592, #F15F79);
+  }
+  #projects {
+    margin:0;
+
+  }
+  .gitProject {
+    grid-template-columns: 60%;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .fccProject{
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+    grid-gap: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) --Medium */
+
+@media only screen and (min-width: 600px) {
+  ...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)  --Large*/
+
+@media only screen and (min-width: 1200px) {
+  ...
+}
